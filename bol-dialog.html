@@ -64,6 +64,12 @@
         behaviors: [
           Polymer.PaperDialogBehavior
         ],
+        open: function () {
+          console.log('123123123');
+          document.querySelector('body').classList.add("dialog-open");
+          this._setCanceled(false);
+          this.opened = true;
+        },
         openAnimated: function () {
           this.animate([
               {transform: 'translateX(-100%)', opacity: 1, easing: 'ease-out'},

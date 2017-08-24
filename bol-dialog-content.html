@@ -8,15 +8,14 @@
     <style>
       :host {
         display: block;
+        position: relative;
+        height: 200px;
       }
 
     </style>
 
     <paper-dialog-scrollable id="scroll">
-      <div>
-        <slot></slot>
-      </div>
-
+      <slot></slot>
     </paper-dialog-scrollable>
 
   </template>
@@ -37,7 +36,7 @@
 
         },
 
-        ready: function(){
+        ready: function () {
           const dialogElement = this.parentElement;
           const scrollableElement = this.shadowRoot.querySelector('paper-dialog-scrollable').shadowRoot.querySelector('#scrollable');
           console.log(11, dialogElement);

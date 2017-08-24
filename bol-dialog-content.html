@@ -1,0 +1,54 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-dialog-scrollable/paper-dialog-scrollable.html">
+
+<dom-module id="bol-dialog-content">
+
+  <template>
+
+    <style>
+      :host {
+        display: block;
+      }
+
+    </style>
+
+    <paper-dialog-scrollable id="scroll">
+      <div>
+        <slot></slot>
+      </div>
+
+    </paper-dialog-scrollable>
+
+  </template>
+
+  <script>
+    (function () {
+      Polymer({
+        is: 'bol-dialog-content',
+        properties: {
+
+          /**
+           * The dialog element that implements `Polymer.PaperDialogBehavior` containing this element.
+           * @type {?Node}
+           */
+          dialogElement: {
+            type: Object
+          }
+
+        },
+
+        ready: function(){
+          const dialogElement = this.parentElement;
+          const scrollableElement = this.shadowRoot.querySelector('paper-dialog-scrollable').shadowRoot.querySelector('#scrollable');
+          console.log(11, dialogElement);
+          console.log(22, scrollableElement);
+          dialogElement.sizingTarget = scrollableElement;
+          console.log(44, dialogElement.sizingTarget)
+          console.log(33, dialogElement, scrollableElement)
+        }
+      });
+    })();
+  </script>
+
+</dom-module>
+

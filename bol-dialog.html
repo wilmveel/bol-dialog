@@ -1,0 +1,77 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-dialog-behavior/paper-dialog-behavior.html">
+<link rel="import" href="../paper-dialog-behavior/paper-dialog-shared-styles.html">
+
+<dom-module id="bol-dialog">
+
+
+  <template>
+    <style include="paper-dialog-shared-styles"></style>
+    <style>
+
+      :host {
+       display: block;
+
+      }
+
+      .dialog {
+        border-radius: 15px;
+        background: #ffffff;
+
+      }
+
+      close {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 0;
+        top:0;
+        z-index: 1000;
+      }
+
+      close:before {
+        content: "\e608";
+      }
+
+      @media (max-width: 768px) {
+        :host {
+          margin: 0;
+          width: 100% !important;
+        }
+
+        .dialog {
+          width: 100%;
+        }
+      }
+    </style>
+    <close on-tap="close"></close>
+    <div id="d" class="dialog">
+
+      <slot></slot>
+    </div>
+  </template>
+
+
+  <script>
+    (function () {
+      'use strict';
+      Polymer({
+        is: 'bol-dialog',
+        behaviors: [
+          Polymer.PaperDialogBehavior
+        ],
+        openAnimated: function () {
+          this.animate([
+              {transform: 'translateX(-100%)', opacity: 1, easing: 'ease-out'},
+              {transform: 'translateX(0)', opacity: 1, easing: 'ease-in'}
+            ],
+            {
+              duration: 1000,
+            });
+          this.open();
+        }
+      });
+    })();
+  </script>
+</dom-module>

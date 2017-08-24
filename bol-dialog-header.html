@@ -1,0 +1,42 @@
+<link rel="import" href="../../polymer/polymer.html">
+
+<link rel="import" href="../../paper-dialog-behavior/paper-dialog-behavior.html">
+
+<link rel="import" href="../bol-styles/bol-shared-styles.html">
+
+<dom-module id="bol-dialog-header">
+
+  <style>
+    :host {
+      display: block;
+      margin: 1.5em;
+    }
+  </style>
+
+  <template>
+    <style include="bol-shared-styles"></style>
+
+    <h1 class="header">[[title]]</h1>
+    <p class="lede h-bottom--m">
+      <content></content>
+    </p>
+  </template>
+
+  <script>
+    (function () {
+      Polymer({
+        is: 'bol-dialog-header',
+        properties: {
+          title: {
+            type: String,
+          },
+          subTitle: {
+            type: String,
+          }
+        }
+      });
+    })();
+  </script>
+
+</dom-module>
+

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+  <title>bol-dialog demo</title>
+
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+  <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+  <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+
+  <link rel="import" href="../../paper-button/paper-button.html">
+
+  <link rel="import" href="../bol-dialog.html">
+  <link rel="import" href="../bol-dialog-header.html">
+  <link rel="import" href="../bol-dialog-content.html">
+  <link rel="import" href="../bol-dialog-footer.html">
+
+  <custom-style>
+    <style is="custom-style" include="demo-pages-shared-styles">
+    </style>
+  </custom-style>
+  <style>
+    html, body {
+      margin: 0;
+    }
+    bol-dialog {
+      width: 800px;
+    }
+  </style>
+</head>
+<body>
+<div class="vertical-section-container centered">
+  <h3>Basic bol-dialog demo</h3>
+  <demo-snippet>
+    <template>
+      <paper-button onclick="dialog1.open()">Open</paper-button>
+      <bol-dialog id="dialog1" modal>
+        <h1>Hello World</h1>
+        <h1>Hello World</h1>
+        <h1>Hello World</h1>
+        <h1>Hello World</h1>
+        <h1>Hello World</h1>
+        <h1>Hello World</h1>
+      </bol-dialog>
+    </template>
+  </demo-snippet>
+</div>
+
+<div class="vertical-section-container centered">
+  <h3>Scrollable content bol-dialog demo</h3>
+  <demo-snippet>
+    <template>
+      <paper-button onclick="dialog2.open()">Open</paper-button>
+      <bol-dialog id="dialog2" modal>
+        <bol-dialog-content>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+        </bol-dialog-content>
+
+      </bol-dialog>
+    </template>
+  </demo-snippet>
+</div>
+
+<div class="vertical-section-container centered">
+  <h3>Scrollable content bol-dialog demo</h3>
+  <demo-snippet>
+    <template>
+      <paper-button onclick="dialog3.openAnimated()">Open</paper-button>
+      <bol-dialog id="dialog3" modal>
+        <span>Hello World</span>
+      </bol-dialog>
+    </template>
+  </demo-snippet>
+</div>
+
+<div class="vertical-section-container centered">
+  <h3>Scrollable content bol-dialog demo</h3>
+  <demo-snippet>
+    <template>
+      <paper-button onclick="dialog5.open()">Open</paper-button>
+      <bol-dialog id="dialog5" modal>
+        <bol-dialog-header title="Hello World"></bol-dialog-header>
+        <bol-dialog-content>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+        </bol-dialog-content>
+        <bol-dialog-footer>
+          Hello
+        </bol-dialog-footer>
+      </bol-dialog>
+    </template>
+  </demo-snippet>
+</div>
+
+
+</body>
+</html>

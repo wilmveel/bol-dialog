@@ -35,12 +35,8 @@
 
       @media (max-width: 768px) {
         :host {
-          position: fixed;
-          height: 100%;
           margin: 0;
-          top:0;
-          left: 0;
-          right: 0;
+          width: 100% !important;
         }
 
         close {
@@ -48,12 +44,12 @@
         }
 
         .dialog {
+          width: 100% !important;
         }
       }
     </style>
     <close on-tap="close"></close>
     <div id="d" class="dialog">
-
       <slot></slot>
     </div>
   </template>

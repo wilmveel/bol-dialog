@@ -41,12 +41,12 @@
 
 
         .dialog {
-          width: 100% !important;
+          width: 100vw !important;
         }
       }
     </style>
     <close on-tap="close"></close>
-    <div id="d" class="dialog">
+    <div class="dialog">
       <slot></slot>
     </div>
   </template>
@@ -65,8 +65,6 @@
         ],
         _modalOpened: function (open) {
           const body = document.querySelector('body');
-
-
 
           if(open){
             this.scrollPosition = [

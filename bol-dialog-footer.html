@@ -6,23 +6,22 @@
 
 <dom-module id="bol-dialog-footer">
 
-  <style>
-    :host {
-      bottom: 0;
-    }
-  </style>
+
 
   <template>
-    <style include="bol-shared-styles"></style>
-      <content></content>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <slot></slot>
   </template>
 
   <script>
     (function () {
       Polymer({
         is: 'bol-dialog-footer',
-        properties: {
-        }
+        properties: {}
       });
     })();
   </script>

@@ -136,60 +136,49 @@
 </div>
 
 <div class="vertical-section-container centered">
-  <h3>Scrollable content bol-dialog demo</h3>
-  <demo-snippet>
-    <template>
-      <paper-button onclick="dialog4.open()">Open</paper-button>
-      <bol-dialog id="dialog4" modal>
-        <paper-dialog-scrollable>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-          <h1>Hello World</h1>
-        </paper-dialog-scrollable>
-      </bol-dialog>
-    </template>
-  </demo-snippet>
-</div>
-
-
-<div class="vertical-section-container centered">
-  <h3>Scrollable content bol-dialog demo</h3>
+  <h3>Header + Footer content bol-dialog demo</h3>
   <demo-snippet>
     <template>
       <paper-button onclick="dialog5.open()">Open</paper-button>
       <bol-dialog id="dialog5" modal>
         <bol-dialog-header title="Hello World"></bol-dialog-header>
         <bol-dialog-content>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+        </bol-dialog-content>
+        <bol-dialog-footer>
+          Hello
+        </bol-dialog-footer>
+      </bol-dialog>
+    </template>
+  </demo-snippet>
+</div>
+
+<div class="vertical-section-container centered">
+  <h3>Header + Footer Scrollable content bol-dialog demo</h3>
+  <demo-snippet>
+    <template>
+      <style>
+        bol-dialog-footer{
+          height: 100px;
+        }
+      </style>
+      <paper-button onclick="dialog6.open()">Open</paper-button>
+      <bol-dialog id="dialog6" modal>
+        <bol-dialog-header title="Hello World"></bol-dialog-header>
+        <bol-dialog-content>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
+          <h1>Hello World</h1>
           <h1>Hello World</h1>
           <h1>Hello World</h1>
           <h1>Hello World</h1>
@@ -231,7 +220,6 @@
     </template>
   </demo-snippet>
 </div>
-
 
 </body>
 </html>

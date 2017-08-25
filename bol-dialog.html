@@ -41,6 +41,10 @@
           right: 0;
         }
 
+        close {
+          position: fixed;
+        }
+
         .dialog {
         }
       }
@@ -63,7 +67,7 @@
         ],
         open: function () {
           console.log('123123123');
-          document.querySelector('body').classList.add("dialog-open");
+          //document.querySelector('body').classList.add("dialog-open");
           this._setCanceled(false);
           this.opened = true;
         },

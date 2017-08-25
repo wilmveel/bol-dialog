@@ -11,11 +11,8 @@
 
       :host {
        display: block;
-      }
-
-      .dialog {
-        border-radius: 15px;
         background: #ffffff;
+        border-radius: 5px;
       }
 
       close {
@@ -27,6 +24,7 @@
         right: 0;
         top:0;
         z-index: 1000;
+        border-radius: 5px;
       }
 
       close:before {
@@ -36,6 +34,7 @@
       @media (max-width: 768px) {
         :host {
           margin: 0;
+          border-radius: 0;
           width: 100vw !important;
         }
 

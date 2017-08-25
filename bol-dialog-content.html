@@ -11,6 +11,9 @@
         position: relative;
       }
 
+      #scroll {
+      }
+
     </style>
 
     <paper-dialog-scrollable id="scroll">
@@ -38,11 +41,7 @@
         ready: function () {
           const dialogElement = this.parentElement;
           const scrollableElement = this.shadowRoot.querySelector('paper-dialog-scrollable').shadowRoot.querySelector('#scrollable');
-          console.log(11, dialogElement);
-          console.log(22, scrollableElement);
           dialogElement.sizingTarget = scrollableElement;
-          console.log(44, dialogElement.sizingTarget)
-          console.log(33, dialogElement, scrollableElement)
         }
       });
     })();

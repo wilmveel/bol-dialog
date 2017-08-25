@@ -65,11 +65,20 @@
         behaviors: [
           Polymer.PaperDialogBehavior
         ],
-        open: function () {
+        observers: [
+          '_modalOpened(opened)'
+        ],
+        _modalOpened: function (open) {
           console.log('123123123');
-          //document.querySelector('body').classList.add("dialog-open");
-          this._setCanceled(false);
-          this.opened = true;
+          //.classList.add("dialog-open");
+          const body = document.querySelector('body');
+          if(open){
+            body.style['position'] = 'fixed'
+            body.style['overflow'] = 'hidden'
+          } else {
+            body.style['position'] = null
+            body.style['overflow'] = null
+          }
         },
         openAnimated: function () {
           this.animate([

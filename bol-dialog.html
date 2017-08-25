@@ -66,11 +66,13 @@
         _modalOpened: function (open) {
           const body = document.querySelector('body');
           if(open){
-            //body.style['position'] = 'fixed';
+            body.style['position'] = 'fixed';
             body.style['overflow'] = 'hidden';
+            body.style['width'] = '100%';
           } else {
-            //body.style['position'] = null;
+            body.style['position'] = null;
             body.style['overflow'] = null;
+            body.style['width'] = null;
           }
         },
         openAnimated: function () {
